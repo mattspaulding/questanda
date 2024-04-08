@@ -1,4 +1,4 @@
-import Header from "../components/Header/header";
+import Header from "../components/Header";
 import clientPromise from "../lib/mongodb";
 export async function getStaticPaths() {
     return {
