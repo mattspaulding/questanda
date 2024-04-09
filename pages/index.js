@@ -28,7 +28,6 @@ export default function Page({ ip }) {
   return (
     <div>
       <Head>
-        <html lang="en" />
         <title>
           Questanda | Ask anything.
         </title>

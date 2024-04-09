@@ -43,7 +43,6 @@ export default function Page({ question }) {
     return (
         <div>
             <Head>
-                <html lang="en" />
                 <title>{`${question.title} | Questanda`}
                 </title>
                 <meta
