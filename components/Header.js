@@ -4,7 +4,7 @@ function Header() {
         <header style={{
             'backgroundColor': '#555568',
             'padding': '10px 20px',
-            'color': 'white',
+            'color': '#e9efec',
             'display': 'flex',
             'justifyContent': 'space-between',
             'alignItems': 'center'

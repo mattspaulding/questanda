@@ -8,7 +8,7 @@ export default function Page({ ip }) {
   const [showAskForm, setShowAskForm] = useState(true)
   const router = useRouter();
   async function onSubmit(event) {
-     event.preventDefault()
+    event.preventDefault()
 
     const formData = new FormData(event.target)
     const form_values = Object.fromEntries(formData);
@@ -28,6 +28,7 @@ export default function Page({ ip }) {
   return (
     <div>
       <Head>
+        <html lang="en" />
         <title>
           Questanda | Ask anything.
         </title>
@@ -43,15 +44,15 @@ export default function Page({ ip }) {
           <div>
             <h1>Questanda</h1>
           </div>
-          {showAskForm ?<div>
+          {showAskForm ? <div>
             <form id="ask-form" onSubmit={onSubmit}>
               <label for="title">Ask anything...</label>
               {/* <input type="text" id="title" name="title" placeholder="Go on... Ask." /> */}
               <textarea required id="title" name="title" placeholder="Go on... Ask." rows="10" cols="30"></textarea>
-              <input type="submit" value="Ask"/>
-            </form> 
+              <input type="submit" value="Ask" />
+            </form>
             <ul>
-            <li>
+              <li>
                 <Link href="/why-is-the-sky-blue">Why is the sky blue?</Link>
               </li>
               <li>
@@ -61,8 +62,8 @@ export default function Page({ ip }) {
                 <Link href="/are-bananas-healthy">Are bananas healthy?</Link>
               </li>
             </ul>
-           </div> : 
-           <div>Seeking wisdom...</div>}
+          </div> :
+            <div>Seeking wisdom...</div>}
         </div>
       </div></div>
 

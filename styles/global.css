@@ -15,7 +15,7 @@ body {
 }
 
 a {
-  color: #a0a08b;
+  color: #e9efec;
   text-decoration: none;
 }
 
@@ -44,7 +44,7 @@ textarea {
 
 input[type="submit"] {
   width: 100%;
-  background-color: #a0a08b;
+  background-color: #555568;
   color: #e9efec;
   padding: 14px 20px;
   margin: 8px 0;
@@ -54,7 +54,7 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-  background-color: #555568;
+  background-color: #a0a08b;
 }
 
 .content-area {
