@@ -33,6 +33,15 @@ export default function Page({ ip }) {
         </title>
         <meta property="og:title" content="Questanda | Ask anything." />
         <meta
+                    name="description"
+                    content="Go on... Ask."
+                    key="desc"
+                />
+              <meta
+                    property="og:description"
+                    content="Go on... Ask."
+                />
+        <meta
           property="og:image"
           content="https://www.questanda.com/logo.png"
         />
