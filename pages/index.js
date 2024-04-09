@@ -46,7 +46,7 @@ export default function Page({ ip }) {
           </div>
           {showAskForm ? <div>
             <form id="ask-form" onSubmit={onSubmit}>
-              <label for="title">Ask anything...</label>
+              <label htmlFor="title">Ask anything...</label>
               {/* <input type="text" id="title" name="title" placeholder="Go on... Ask." /> */}
               <textarea required id="title" name="title" placeholder="Go on... Ask." rows="10" cols="30"></textarea>
               <input type="submit" value="Ask" />
