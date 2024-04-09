@@ -26,7 +26,6 @@ a:hover {
 .center {
   display: flex;
   justify-content: center;
-  padding-top: 30px;
   margin: 20px;
 }
 
@@ -73,3 +72,4 @@ li {
     padding: 10px;
 
 }
+
