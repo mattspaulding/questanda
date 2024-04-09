@@ -43,8 +43,7 @@ export default function Page({ question }) {
     return (
         <div>
             <Head>
-                <title>
-                    {question.title} | Questanda
+                <title>{`${question.title} | Questanda`}
                 </title>
                 <meta
                     name="description"
@@ -62,7 +61,9 @@ export default function Page({ question }) {
                 />
             </Head>
             <Header />
-            <h1>{question.title}</h1>
-            <pre>{question.answer}</pre>
+            <div className="content-area">
+                <h1>{question.title}</h1>
+                <pre>{question.answer}</pre>
+            </div>
         </div>)
 }

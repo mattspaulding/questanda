@@ -1,6 +1,8 @@
 import { useRouter } from "next/router";
 import Head from "next/head";
 import { useState } from "react";
+import Header from "../components/Header";
+import Link from "next/link"
 
 export default function Page({ ip }) {
   const [showAskForm, setShowAskForm] = useState(true)
@@ -36,18 +38,26 @@ export default function Page({ ip }) {
           content="https://www.questanda.com/logo.png"
         />
       </Head>
-      <div>
+      <Header />
+      <div className="center">
         <div>
-          <h1>Questanda</h1>
-          <p>Ask anything.</p>
+          <div>
+            <h1>Questanda</h1>
+          </div>
+          {showAskForm ?
+            <form id="ask-form" onSubmit={onSubmit}>
+              <label for="title">Ask anything...</label>
+              {/* <input type="text" id="title" name="title" placeholder="Go on... Ask." /> */}
+              <textarea  id="title" name="title" placeholder="Go on... Ask." rows="10" cols="30"></textarea>
+              <input type="submit" value="Ask"/>
+            </form> : null}
+            <ul>
+              <li>
+                <Link href="/why-is-the-sky-blue">Why is the sky blue?</Link>
+              </li>
+            </ul>
         </div>
-        {showAskForm ?
-          <form id="ask-form" onSubmit={onSubmit}>
-            <input type="text" name="title" />
-            <button type="submit">Submit</button>
-          </form> : null}
-      </div>
-    </div>
+      </div></div>
 
   )
 }
