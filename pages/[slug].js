@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Header from "../components/Header";
 import clientPromise from "../lib/mongodb";
+import Markdown from 'react-markdown'
 export async function getStaticPaths() {
     return {
         paths: [],
@@ -63,7 +64,7 @@ export default function Page({ question }) {
             <Header />
             <div className="content-area">
                 <h1>{question.title}</h1>
-                <pre>{question.answer}</pre>
+                <Markdown>{question.answer}</Markdown>
             </div>
         </div>)
 }
