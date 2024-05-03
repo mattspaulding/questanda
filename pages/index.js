@@ -45,6 +45,7 @@ export default function Page({ ip }) {
           property="og:image"
           content="https://www.questanda.com/logo.png"
         />
+        <link rel="manifest" href="/manifest.json"></link>
       </Head>
       <Header />
       <div className="center">
